@@ -1,0 +1,13 @@
+type Question {
+    id: ID!
+    title: String!
+    content: String!
+}
+
+type Query {
+    findAllQuestions: [Question!]!
+}
+
+type Mutation {
+    newQuestion(title: String!, content: String!): Question!
+}

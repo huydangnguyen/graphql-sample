@@ -1,0 +1,13 @@
+type Comment {
+    id: ID!
+    content: String!
+    answer: Answer!
+}
+
+extend type Query {
+    findComments(answerId: ID!): [Comment!]!
+}
+
+extend type Mutation {
+    newComment(content: String!, answerId: ID!): Comment!
+}

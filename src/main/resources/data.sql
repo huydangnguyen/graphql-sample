@@ -1,0 +1,11 @@
+insert into question(title, content) values ('First president of America', 'Who is the first president of America?');
+insert into question(title, content) values ('Amount of sleep for an adult', 'How long should an adult use for sleeping everyday?');
+insert into answer(content, question_id) values ('George Washington', 1);
+insert into answer(content, question_id) values ('About 8 hours', 2);
+insert into answer(content, question_id) values ('From 7-8 hours', 2);
+insert into comment(content, answer_id) values ('I thought he is Abraham Lincoln.', 1);
+insert into comment(content, answer_id) values ('Most adults take only 6 hours/day for sleeping', 2);
+insert into comment(content, answer_id) values ('Nice suggestion', 2);
+insert into comment(content, answer_id) values ('This should be an accepted answer.', 3);
+insert into comment(content, answer_id) values ('I only take 4 hours a day', 3);
+insert into comment(content, answer_id) values ('Mine is a little bit more than normal: 10 hours', 3);

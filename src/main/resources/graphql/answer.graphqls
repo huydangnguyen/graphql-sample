@@ -1,0 +1,13 @@
+type Answer {
+    id: ID!
+    content: String!
+    question: Question!
+}
+
+extend type Query {
+    findAnswers(questionId: ID!): [Answer!]!
+}
+
+extend type Mutation {
+    newAnswer(content: String!, questionId: ID!): Answer!
+}
